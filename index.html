@@ -3,170 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Srinivas M, M.Tech Computer Science and Engineering student and software development enthusiast.">
-  <title>Srinivas M | Computer Science Portfolio</title>
+  <meta name="theme-color" content="#0b1220">
+  <meta name="description" content="Srinivas M. — M.Tech Computer Science student focused on Python, software development, AI, and machine learning.">
+  <title>Srinivas M. | Software & AI Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    .project-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:25px}
-    .project-actions .btn{padding:9px 14px;font-size:12px}
+    :root{--bg:#f5f7fb;--surface:#fff;--ink:#111c31;--muted:#637087;--line:#e2e8f0;--navy:#0b1220;--navy2:#101d33;--blue:#2563eb;--cyan:#38bdf8;--pale:#eaf2ff;--radius:22px;--shadow:0 18px 55px rgba(15,23,42,.08)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg);color:var(--ink);font-family:'DM Sans',sans-serif;line-height:1.65}a{color:inherit;text-decoration:none}button,a{-webkit-tap-highlight-color:transparent}.container{width:min(1120px,calc(100% - 44px));margin-inline:auto}.nav-wrap{position:sticky;top:0;z-index:20;background:rgba(11,18,32,.94);backdrop-filter:blur(16px);border-bottom:1px solid rgba(255,255,255,.08)}.nav{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font:800 1.35rem Manrope,sans-serif;color:#fff;letter-spacing:-.06em}.brand span{color:var(--cyan)}.nav-links{display:flex;align-items:center;gap:26px}.nav-links a{font-size:.88rem;color:#c7d2e3;transition:color .2s}.nav-links a:hover{color:#fff}.menu-toggle{display:none;background:transparent;color:#fff;border:1px solid #334155;border-radius:10px;padding:8px 11px;font-size:1.1rem}.hero{position:relative;overflow:hidden;background:linear-gradient(125deg,#0b1220 0%,#101d33 65%,#122b49 100%);border-radius:0 0 30px 30px;color:#fff;padding:90px 7.5% 82px;display:grid;grid-template-columns:1.45fr .75fr;gap:60px;align-items:center;min-height:540px}.hero:before{content:"";position:absolute;width:440px;height:440px;right:-150px;top:-180px;border:1px solid rgba(56,189,248,.2);border-radius:50%;box-shadow:0 0 0 48px rgba(56,189,248,.035),0 0 0 96px rgba(56,189,248,.025);pointer-events:none}.eyebrow{margin:0 0 15px;color:var(--blue);font-size:.76rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.hero .eyebrow{color:#7dd3fc}.hero h1{font:800 clamp(2.7rem,5.5vw,4.7rem)/1.08 Manrope,sans-serif;letter-spacing:-.065em;margin:0 0 18px}.hero h1 span{color:#7dd3fc}.hero h2{font:600 clamp(1.15rem,2.1vw,1.55rem)/1.4 Manrope,sans-serif;color:#e2e8f0;margin:0 0 18px;letter-spacing:-.025em}.hero-text{max-width:650px;color:#b8c5d8;font-size:1rem;margin:0}.hero-actions,.socials,.contact-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.hero-actions{margin-top:29px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:11px;padding:11px 17px;font-size:.88rem;font-weight:700;transition:transform .2s,background .2s,border-color .2s}.btn:hover{transform:translateY(-2px)}.btn.primary{background:var(--blue);color:white;box-shadow:0 8px 24px rgba(37,99,235,.25)}.btn.primary:hover{background:#1d4ed8}.btn.light{background:#fff;color:#0b1220}.btn.outline{border:1px solid #52647d;color:#e2e8f0}.btn.outline:hover{border-color:#7dd3fc}.socials{margin-top:28px;gap:19px}.socials a{font-size:.82rem;color:#c5d1e2}.socials a:hover{color:#7dd3fc}.hero-card{position:relative;justify-self:center;width:min(270px,100%)}.photo-frame{position:relative;z-index:1;aspect-ratio:4/5;border-radius:25px;overflow:hidden;border:1px solid rgba(255,255,255,.2);background:linear-gradient(145deg,#1e3a5f,#0f172a);box-shadow:0 28px 65px rgba(0,0,0,.3)}.photo-frame img{width:100%;height:100%;object-fit:cover;display:block}.photo-placeholder{height:100%;display:grid;place-items:center;color:#bfdbfe;font:800 5rem Manrope,sans-serif}.floating-card{position:absolute;z-index:2;left:-36px;bottom:25px;background:#fff;color:var(--ink);padding:14px 18px;border-radius:15px;box-shadow:var(--shadow);min-width:165px}.floating-card strong{display:block;font:800 1rem Manrope,sans-serif}.floating-card span{font-size:.78rem;color:var(--muted)}.section{padding:86px 0}.section.alt{background:#edf2f8;border-block:1px solid #e5eaf2}.section-heading{max-width:720px;margin-bottom:34px}.section-heading h2,.contact h2{font:800 clamp(1.8rem,3vw,2.65rem)/1.2 Manrope,sans-serif;letter-spacing:-.05em;margin:0}.section-heading>p:not(.eyebrow){color:var(--muted);margin:13px 0 0}.about-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:55px;align-items:start}.about-copy p{color:#4d5c72;margin:0 0 16px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.stat{padding:19px 15px;background:#fff;border:1px solid var(--line);border-radius:16px}.stat strong{display:block;font:800 1.65rem Manrope,sans-serif;color:var(--blue);letter-spacing:-.04em}.stat span{display:block;font-size:.75rem;color:var(--muted);margin-top:5px}.skill-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.skill-card{padding:24px 21px;background:#fff;border:1px solid var(--line);border-radius:18px;transition:transform .2s,box-shadow .2s}.skill-card:hover,.project-card:hover{transform:translateY(-4px);box-shadow:var(--shadow)}.skill-number{display:inline-grid;place-items:center;width:34px;height:34px;background:var(--pale);color:var(--blue);font-size:.76rem;font-weight:800;border-radius:10px}.skill-card h3{font:800 1rem Manrope,sans-serif;margin:19px 0 8px}.skill-card p{font-size:.87rem;color:var(--muted);margin:0}.project-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.project-card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:25px;display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}.project-card.featured{border-color:#a9c5ff;box-shadow:0 12px 35px rgba(37,99,235,.08);position:relative}.project-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}.project-index{font:800 .82rem Manrope,sans-serif;color:var(--blue)}.project-type{font-size:.72rem;font-weight:700;color:#53647b;background:#f1f5f9;padding:6px 10px;border-radius:999px}.project-card h3{font:800 1.28rem/1.3 Manrope,sans-serif;letter-spacing:-.03em;margin:0 0 11px}.project-card p{color:var(--muted);font-size:.91rem;margin:0 0 18px}.tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:auto;padding-top:5px}.tags span{font-size:.72rem;font-weight:700;color:#31517c;background:#eef4ff;border:1px solid #e0eaff;border-radius:7px;padding:5px 8px}.project-actions{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.project-actions .btn{font-size:.78rem;padding:9px 12px}.project-actions .btn.secondary{background:#fff;border:1px solid #cbd5e1;color:#25364d}.project-actions .btn.secondary:hover{border-color:var(--blue);color:var(--blue)}.project-actions .btn.disabled{background:#f1f5f9;color:#64748b;border:1px solid #e2e8f0;cursor:default;pointer-events:none}.project-note{margin-top:18px;padding:14px 16px;background:#f8fafc;border:1px dashed #cbd5e1;border-radius:12px;color:#64748b;font-size:.8rem}.roadmap{margin-top:28px;background:#0f1b2d;color:white;border-radius:20px;padding:26px}.roadmap h3{font:800 1.1rem Manrope,sans-serif;margin:0 0 17px}.roadmap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.roadmap-item{padding:15px;border:1px solid #2a3a52;background:#142238;border-radius:13px}.roadmap-item .version{font:800 .78rem Manrope,sans-serif;color:#7dd3fc}.roadmap-item strong{display:block;margin:7px 0 5px;font-size:.88rem}.roadmap-item p{font-size:.78rem;color:#b7c5d8;margin:0}.status{display:inline-block;margin-top:11px;font-size:.67rem;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:#cbd5e1}.status.live{color:#86efac}.timeline{display:grid;grid-template-columns:1fr 1fr;gap:16px}.timeline-item{display:flex;gap:16px;padding:23px;background:#fff;border:1px solid var(--line);border-radius:17px}.timeline-dot{width:11px;height:11px;background:var(--blue);border-radius:50%;margin-top:8px;flex:0 0 auto;box-shadow:0 0 0 5px #e7efff}.timeline-meta{font-size:.76rem;color:var(--blue);font-weight:800}.timeline-item h3{font:800 1rem Manrope,sans-serif;margin:6px 0}.timeline-item p{color:var(--muted);margin:0;font-size:.88rem}.education-list{display:grid;gap:12px}.education-card{display:grid;grid-template-columns:145px 1fr;gap:20px;align-items:start;padding:21px 24px;background:#fff;border:1px solid var(--line);border-radius:16px}.year{font-size:.8rem;color:var(--blue);font-weight:800;padding-top:3px}.education-card h3{font:800 1rem Manrope,sans-serif;margin:0 0 5px}.education-card p{color:var(--muted);font-size:.88rem;margin:0}.cert-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.cert{padding:18px 20px;background:#fff;border:1px solid var(--line);border-radius:14px;font-weight:700;font-size:.9rem}.cert span{display:block;color:var(--muted);font-weight:500;font-size:.8rem;margin-top:4px}.contact{margin-top:75px;margin-bottom:75px;background:linear-gradient(125deg,#0b1220,#132946);color:#fff;padding:54px;border-radius:25px;position:relative;overflow:hidden}.contact:after{content:"";position:absolute;width:250px;height:250px;border:1px solid #294a6a;border-radius:50%;right:-70px;top:-100px;box-shadow:0 0 0 35px rgba(56,189,248,.04),0 0 0 70px rgba(56,189,248,.025)}.contact .eyebrow{color:#7dd3fc}.contact h2{max-width:650px}.contact>p:not(.eyebrow){color:#c0ccdc;max-width:620px;margin:17px 0 25px}.contact-actions{position:relative;z-index:1}.footer{padding:25px 0 35px;color:var(--muted);font-size:.8rem;border-top:1px solid var(--line)}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer a{color:var(--blue)}.reveal{animation:fadeUp .65s both}@keyframes fadeUp{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:translateY(0)}}
+    @media(max-width:900px){.hero{gap:35px;padding:70px 6%}.skill-grid{grid-template-columns:repeat(2,1fr)}.roadmap-grid{grid-template-columns:repeat(2,1fr)}.about-grid{gap:28px}.nav-links{gap:16px}}
+    @media(max-width:680px){.container{width:min(100% - 30px,1120px)}.nav{height:67px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:67px;left:0;right:0;padding:16px 22px 20px;background:#0b1220;border-bottom:1px solid #26364b;flex-direction:column;align-items:flex-start;gap:15px}.nav-links.open{display:flex}.hero{grid-template-columns:1fr;padding:57px 25px 55px;gap:38px;border-radius:0 0 23px 23px}.hero-card{width:205px}.floating-card{left:-25px;bottom:17px}.hero h1{font-size:2.75rem}.section{padding:64px 0}.about-grid,.project-list,.timeline{grid-template-columns:1fr}.stats{gap:8px}.stat{padding:14px 10px}.stat strong{font-size:1.35rem}.stat span{font-size:.68rem}.skill-grid{gap:11px}.skill-card{padding:19px 16px}.project-card{padding:21px}.roadmap-grid{grid-template-columns:1fr 1fr}.education-card{grid-template-columns:1fr;gap:4px;padding:19px}.cert-grid{grid-template-columns:1fr}.contact{padding:35px 24px;margin-top:55px;margin-bottom:55px}.footer-inner{flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
   </style>
 </head>
 <body>
-  <div class="progress"></div>
-
   <header class="nav-wrap">
-    <nav class="nav container">
-      <a class="brand" href="#home">SM<span>.</span></a>
-      <button class="menu-toggle" aria-label="Open navigation">☰</button>
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Srinivas home">SM<span>.</span></a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
       <div class="nav-links">
-        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
-        <a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#education">Education</a><a href="#contact">Contact</a>
       </div>
     </nav>
   </header>
 
   <main id="home">
     <section class="hero container">
-      <div class="hero-copy reveal">
-        <p class="eyebrow">M.Tech CSE • Software &amp; AI/ML</p>
+      <div class="hero-copy">
+        <p class="eyebrow">M.Tech CSE · Software Development · AI/ML</p>
         <h1>Hi, I'm <span>Srinivas M.</span></h1>
-        <h2>Computer Science Student building practical software solutions.</h2>
-        <p class="hero-text">Computer Science graduate with hands-on experience in Python, C, machine learning, web development, and Flask-based application development. Currently pursuing M.Tech in Computer Science and Engineering at Amrita Vishwa Vidyapeetham.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn secondary" href="resume.pdf" target="_blank" rel="noopener">View Resume</a>
-        </div>
-        <div class="socials">
-          <a href="https://www.linkedin.com/in/mamidisetty-srinivas-470901251/" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a href="mailto:srinivasm151204@gmail.com">Email ↗</a>
-          <a href="tel:+918499825694">+91 84998 25694</a>
-          <a href="https://github.com/srinivas556">GitHub</a>
-        </div>
+        <h2>Building practical software with a computer science mindset.</h2>
+        <p class="hero-text">I'm a Computer Science graduate currently pursuing an M.Tech at Amrita Vishwa Vidyapeetham. I enjoy building Python applications, exploring machine learning, and turning ideas into useful software experiences.</p>
+        <div class="hero-actions"><a class="btn primary" href="#projects">Explore my work ↘</a><a class="btn outline" href="resume.pdf" target="_blank" rel="noopener">View résumé ↗</a></div>
+        <div class="socials"><a href="https://github.com/srinivas556" target="_blank" rel="noopener">GitHub ↗</a><a href="https://www.linkedin.com/in/mamidisetty-srinivas-470901251/" target="_blank" rel="noopener">LinkedIn ↗</a><a href="mailto:srinivasm151204@gmail.com">Email ↗</a></div>
       </div>
-      <div class="hero-card reveal">
-        <div class="photo-frame"><img src="profile.png" alt="Professional portrait of Srinivas M"></div>
-        <div class="floating-card"><strong>GATE 2026</strong><span>Qualified • Score 484</span></div>
-      </div>
+      <div class="hero-card"><div class="photo-frame"><img src="profile.png" alt="Portrait of Srinivas M" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'"><div class="photo-placeholder" style="display:none">SM</div></div><div class="floating-card"><strong>GATE 2026</strong><span>Qualified · Score 484</span></div></div>
     </section>
 
     <section id="about" class="section container">
-      <div class="section-heading reveal"><p class="eyebrow">01 / About</p><h2>Turning concepts into working applications.</h2></div>
-      <div class="about-grid">
-        <div class="about-copy reveal">
-          <p>I enjoy solving programming problems, learning new technologies, and developing applications that connect software engineering with practical use cases.</p>
-          <p>My foundation includes object-oriented programming, data structures and algorithms, Python, C, web technologies, machine learning, and Flask application development.</p>
-        </div>
-        <div class="stats reveal">
-          <div class="stat"><strong>8.14</strong><span>B.Tech CGPA</span></div>
-          <div class="stat"><strong>484</strong><span>GATE 2026 Score</span></div>
-          <div class="stat"><strong>2026–</strong><span>M.Tech CSE</span></div>
-        </div>
-      </div>
+      <div class="section-heading"><p class="eyebrow">01 / About</p><h2>Curious by nature. Practical by approach.</h2><p>A little about my background and what I bring to a team.</p></div>
+      <div class="about-grid"><div class="about-copy"><p>My interests sit at the intersection of software development, machine learning, and problem solving. I like understanding how systems work and applying that knowledge to build useful, maintainable applications.</p><p>My current focus is strengthening my computer science fundamentals while developing projects that demonstrate practical engineering skills—from web applications to my local AI assistant, Lucky.</p></div><div class="stats"><div class="stat"><strong>8.14</strong><span>B.Tech CGPA</span></div><div class="stat"><strong>484</strong><span>GATE 2026 score</span></div><div class="stat"><strong>M.Tech</strong><span>CSE · 2026–</span></div></div></div>
     </section>
 
-    <section id="skills" class="section alt">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">02 / Skills</p><h2>Technical toolkit</h2></div>
-        <div class="skill-grid">
-          <article class="skill-card reveal"><span class="skill-number">01</span><h3>Programming</h3><p>Python · C · Java fundamentals</p></article>
-          <article class="skill-card reveal"><span class="skill-number">02</span><h3>Web Development</h3><p>HTML · CSS · JavaScript · Bootstrap · WordPress</p></article>
-          <article class="skill-card reveal"><span class="skill-number">03</span><h3>AI / Machine Learning</h3><p>Machine Learning · Python for ML · Flask</p></article>
-          <article class="skill-card reveal"><span class="skill-number">04</span><h3>Computer Science Core</h3><p>OOP · Data Structures &amp; Algorithms · Problem Solving</p></article>
-        </div>
-      </div>
+    <section id="skills" class="section alt"><div class="container"><div class="section-heading"><p class="eyebrow">02 / Skills</p><h2>Tools I work with</h2><p>Technologies and fundamentals I've used in coursework and projects.</p></div><div class="skill-grid">
+      <article class="skill-card"><span class="skill-number">01</span><h3>Programming</h3><p>Python, C, Java fundamentals</p></article>
+      <article class="skill-card"><span class="skill-number">02</span><h3>Web Development</h3><p>HTML, CSS, JavaScript, Bootstrap, WordPress</p></article>
+      <article class="skill-card"><span class="skill-number">03</span><h3>Data &amp; Machine Learning</h3><p>Python for ML, NumPy, Pandas, model-based applications</p></article>
+      <article class="skill-card"><span class="skill-number">04</span><h3>Frameworks &amp; CS</h3><p>Flask, OOP, data structures, algorithms, problem solving</p></article>
+    </div></div></section>
+
+    <section id="projects" class="section container"><div class="section-heading"><p class="eyebrow">03 / Projects</p><h2>Selected projects</h2><p>A selection of applications and experiments I've built. More work is available on GitHub.</p></div><div class="project-list">
+      <article class="project-card featured"><div class="project-top"><span class="project-index">01 / Featured</span><span class="project-type">Local AI · Python</span></div><h3>Lucky — Local AI Assistant</h3><p>A local AI assistant project built around Python and Ollama. The project is evolving through planned releases, beginning with a text-based assistant and expanding toward web chat and voice interaction.</p><div class="tags"><span>Python</span><span>Ollama</span><span>LLMs</span><span>FastAPI</span><span>Speech</span></div><div class="project-actions"><a class="btn primary" href="https://github.com/srinivas556/lucky-local-ai-assistant" target="_blank" rel="noopener">View on GitHub ↗</a><a class="btn secondary" href="https://srinivas556.github.io/lucky-local-ai-assistant/" target="_blank" rel="noopener">Project site ↗</a></div><div class="project-note">The project site currently presents Version 1. Future versions will be linked here as they are completed and published.</div></article>
+      <article class="project-card"><div class="project-top"><span class="project-index">02</span><span class="project-type">Data &amp; Machine Learning</span></div><h3>Retail Intelligence System</h3><p>A Flask-based retail analytics application that analyzes historical sales, predicts sales using machine learning, and generates data-driven rack-placement recommendations.</p><div class="tags"><span>Python</span><span>Flask</span><span>NumPy</span><span>Pandas</span><span>Machine Learning</span></div><div class="project-actions"><a class="btn secondary" href="https://retail-intelligence-system-4l0f.onrender.com/" target="_blank" rel="noopener">Open application ↗</a></div></article>
+      <article class="project-card"><div class="project-top"><span class="project-index">03</span><span class="project-type">Web Application</span></div><h3>Attendance Management System</h3><p>A role-based Flask application with faculty and student dashboards, attendance marking, attendance history, and percentage tracking.</p><div class="tags"><span>Python</span><span>Flask</span><span>SQLite</span><span>HTML</span><span>CSS</span></div><div class="project-actions"><a class="btn secondary" href="https://attendence-management-system-fz27.onrender.com/" target="_blank" rel="noopener">Open application ↗</a></div></article>
+      <article class="project-card"><div class="project-top"><span class="project-index">04</span><span class="project-type">Interactive Web Game</span></div><h3>Eight Queens Game</h3><p>An interactive browser-based Eight Queens puzzle with multiple difficulty levels, built to make a classic constraint problem engaging.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Logic</span></div><div class="project-actions"><a class="btn secondary" href="https://srinivas556.github.io/Eight_queens_game/" target="_blank" rel="noopener">Play game ↗</a></div></article>
+      <article class="project-card"><div class="project-top"><span class="project-index">05</span><span class="project-type">Web Development</span></div><h3>Responsive Web Development</h3><p>A responsive website created with HTML, CSS, JavaScript, and Bootstrap, applying object-oriented programming concepts.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span></div><div class="project-actions"><a class="btn secondary" href="https://srinivas556.github.io/python-oops/" target="_blank" rel="noopener">View project ↗</a></div></article>
+    </div>
+    <div class="roadmap"><h3>Lucky · Development roadmap</h3><div class="roadmap-grid"><div class="roadmap-item"><span class="version">VERSION 1</span><strong>Local text assistant</strong><p>Initial Python and Ollama assistant.</p><span class="status live">● Published</span></div><div class="roadmap-item"><span class="version">VERSION 2</span><strong>Web chat</strong><p>Browser interface connected to a local API.</p><span class="status">In progress</span></div><div class="roadmap-item"><span class="version">VERSION 3</span><strong>Voice interaction</strong><p>Speech input and spoken responses.</p><span class="status">In development</span></div><div class="roadmap-item"><span class="version">VERSION 4</span><strong>Next-stage features</strong><p>Planned improvements after earlier releases.</p><span class="status">Planned</span></div></div></div>
     </section>
 
-    <section id="projects" class="section container">
-      <div class="section-heading reveal"><p class="eyebrow">03 / Projects</p><h2>Selected work</h2></div>
-      <div class="project-list">
+    <section id="experience" class="section alt"><div class="container"><div class="section-heading"><p class="eyebrow">04 / Experience</p><h2>Internship experience</h2></div><div class="timeline"><article class="timeline-item"><div class="timeline-dot"></div><div><span class="timeline-meta">2 months</span><h3>Machine Learning Virtual Intern</h3><p>TechYuva Computers</p></div></article><article class="timeline-item"><div class="timeline-dot"></div><div><span class="timeline-meta">3 months</span><h3>Frontend Web Development Intern</h3><p>OTP Technologies Private Limited</p></div></article></div></div></section>
 
-        <article class="project-card reveal">
-          <div class="project-top"><span>01</span><span>Web Development</span></div>
-          <h3>Responsive Web Development Project</h3>
-          <p>Developed a responsive website using HTML, CSS, JavaScript, and Bootstrap with object-oriented programming concepts.</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span></div>
-          <div class="project-actions">
-            <a class="btn secondary" href="https://srinivas556.github.io/python-oops/" target="_blank" rel="noopener">Python- Oops ↗</a>
-          </div>
-        </article>
+    <section id="education" class="section container"><div class="section-heading"><p class="eyebrow">05 / Education</p><h2>Academic background</h2></div><div class="education-list"><article class="education-card"><div class="year">2026–Present</div><div><h3>M.Tech · Computer Science and Engineering</h3><p>Amrita Vishwa Vidyapeetham</p></div></article><article class="education-card"><div class="year">2021–2025</div><div><h3>B.Tech · Computer Science and Engineering</h3><p>Eluru College of Engineering and Technology, Duggirala · CGPA 8.14</p></div></article><article class="education-card"><div class="year">2019–2021</div><div><h3>Intermediate</h3><p>NRI Junior College, Eluru · CGPA 9.10</p></div></article><article class="education-card"><div class="year">2018–2019</div><div><h3>10th Standard</h3><p>Sree Sree E.M. High School, Eluru · CGPA 9.20</p></div></article></div></section>
 
-        <article class="project-card reveal">
-          <div class="project-top"><span>02</span><span>Machine Learning</span></div>
-          <h3>Retail Intelligence System</h3>
-          <p>Flask-based retail analytics application that analyzes historical sales data, predicts sales using machine learning, and generates data-driven rack placement recommendations.</p>
-          <div class="tags"><span>Python</span><span>Flask</span><span>NumPy</span><span>Pandas</span><span>Machine Learning</span></div>
-          <div class="project-actions">
-            <a class="btn secondary" href="https://retail-intelligence-system-4l0f.onrender.com/" target="_blank" rel="noopener">Aetail-intelligence-system ↗</a>
-          </div>
-        </article>
+    <section class="section alt"><div class="container"><div class="section-heading"><p class="eyebrow">06 / Certifications</p><h2>Courses &amp; certifications</h2></div><div class="cert-grid"><div class="cert">Python Course Completion<span>TechYuva Computers</span></div><div class="cert">C Language Course Completion<span>SSI Computers</span></div><div class="cert">Game Development using Pygame<span>GUVI</span></div><div class="cert">Python Course<span>GUVI</span></div></div></div></section>
 
-        <article class="project-card reveal">
-          <div class="project-top"><span>03</span><span>Artificial Intelligence</span></div>
-          <h3>Attendance Management System</h3>
-          <p>Role-based Flask attendance management application with faculty and student dashboards, attendance marking, history, and percentage tracking.</p>
-          <div class="tags"><span>Python</span><span>Flask</span><span>SQLite</span><span>HTML</span><span>CSS</span></div>
-          <div class="project-actions">
-            <a class="btn secondary" href="https://attendence-management-system-fz27.onrender.com/" target="_blank" rel="noopener">Attendence-management-system ↗</a>
-          </div>
-        </article>
-        <article class="project-card reveal">
-          <div class="project-top"><span>02</span><span>Eight Queens Game</span></div>
-          <h3>Web Game</h3>
-          <p>User interactive web game for Eight queens with different levels(Easy, Medium, Hard)</p>
-          <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-          <div class="project-actions">
-            <a class="btn secondary" href="https://srinivas556.github.io/Eight_queens_game/" target="_blank" rel="noopener">Eight Queens ↗</a>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <section id="experience" class="section alt">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">04 / Experience</p><h2>Internship experience</h2></div>
-        <div class="timeline">
-          <div class="timeline-item reveal"><div class="timeline-dot"></div><div><span class="timeline-meta">2 months</span><h3>Machine Learning Virtual Intern</h3><p>TechYuva Computers</p></div></div>
-          <div class="timeline-item reveal"><div class="timeline-dot"></div><div><span class="timeline-meta">3 months</span><h3>Frontend Web Development Intern</h3><p>OTP technologies Private Limited</p></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="education" class="section container">
-      <div class="section-heading reveal"><p class="eyebrow">05 / Education</p><h2>Academic journey</h2></div>
-      <div class="education-list">
-        <article class="education-card reveal"><div class="year">2026–Present</div><div><h3>M.Tech, Computer Science and Engineering</h3><p>Amrita Vishwa Vidyapeetham</p></div></article>
-        <article class="education-card reveal"><div class="year">2021–2025</div><div><h3>B.Tech, Computer Science and Engineering</h3><p>Eluru College of Engineering and Technology, Duggirala • CGPA 8.14</p></div></article>
-        <article class="education-card reveal"><div class="year">2019–2021</div><div><h3>Intermediate</h3><p>NRI Junior College, Eluru • CGPA 9.10</p></div></article>
-        <article class="education-card reveal"><div class="year">2018–2019</div><div><h3>10th Standard</h3><p>Sree Sree E.M. High School, Eluru • CGPA 9.20</p></div></article>
-      </div>
-    </section>
-
-    <section class="section alt">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">06 / Certifications</p><h2>Continuous learning</h2></div>
-        <div class="cert-grid">
-          <div class="cert reveal">Python Course Completion <span>TechYuva Computers</span></div>
-          <div class="cert reveal">C Language Course Completion <span>SSI Computers</span></div>
-          <div class="cert reveal">Game Development using Pygame <span>GUVI</span></div>
-          <div class="cert reveal">Python Course <span>GUVI</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="contact container reveal">
-      <p class="eyebrow">07 / Contact</p><h2>Let's build something useful.</h2>
-      <p>I'm open to opportunities involving software development, web technologies, Python, and machine learning.</p>
-      <div class="contact-actions">
-        <a class="btn primary" href="mailto:srinivasm151204@gmail.com">Get in touch</a>
-        <a class="btn secondary" href="https://www.linkedin.com/in/mamidisetty-srinivas-470901251/" target="_blank" rel="noopener">Connect on LinkedIn ↗</a>
-      </div>
-    </section>
+    <section id="contact" class="contact container"><p class="eyebrow">07 / Contact</p><h2>Have an idea or opportunity in mind?</h2><p>I'm interested in opportunities to learn, collaborate, and contribute to software development, Python, and applied AI/ML projects.</p><div class="contact-actions"><a class="btn light" href="mailto:srinivasm151204@gmail.com">Let's connect ↗</a><a class="btn outline" href="https://www.linkedin.com/in/mamidisetty-srinivas-470901251/" target="_blank" rel="noopener">LinkedIn ↗</a><a class="btn outline" href="https://github.com/srinivas556" target="_blank" rel="noopener">GitHub ↗</a></div></section>
   </main>
-
-  <script src="script.js"></script>
+  <footer class="footer"><div class="container footer-inner"><span>© <span id="year"></span> Srinivas M. Built with care.</span><a href="#home">Back to top ↑</a></div></footer>
+  <script>
+    const menuButton=document.querySelector('.menu-toggle');
+    const navLinks=document.querySelector('.nav-links');
+    menuButton.addEventListener('click',()=>{const isOpen=navLinks.classList.toggle('open');menuButton.setAttribute('aria-expanded',String(isOpen));menuButton.textContent=isOpen?'✕':'☰';});
+    navLinks.querySelectorAll('a').forEach(link=>link.addEventListener('click',()=>{navLinks.classList.remove('open');menuButton.setAttribute('aria-expanded','false');menuButton.textContent='☰';}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
 </body>
 </html>
